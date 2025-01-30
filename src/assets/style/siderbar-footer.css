@@ -1,6 +1,6 @@
 body{
   background-color: #000;
-  color: #fff;
+  font-family: var(--font-dm-sans);
 }
 
 .sidebar{
@@ -43,7 +43,6 @@ body{
   font-weight: 600;
   font-size: .875em;
   text-decoration: none;
-  font-family: 'DM Sans', sans-serif;
 }
 
 .library{
@@ -74,7 +73,6 @@ body{
   font-weight: 700;
   font-size: .875em;
   text-align: center;
-  font-family: 'DM Sans', sans-serif;
   height: 2.5rem;
   text-align: center;
   text-decoration: none;
@@ -114,7 +112,6 @@ body{
 
 .sectionPlaylistContent .text{
   padding-bottom: .87rem;
-  font-family: 'DM Sans', sans-serif;
   color: #fff;
 }
 
@@ -135,7 +132,6 @@ body{
   border-radius: 1.25rem;
   font-size: .875em;
   font-weight: 700;
-  font-family: 'DM Sans', sans-serif;
   text-decoration: none;
   text-transform: none;
   margin-top: .875rem;
@@ -172,6 +168,48 @@ body{
   border-radius: 1.25rem;
 }
 
+.disclaimerPremium{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: .93rem 2.5rem;
+  background-image: linear-gradient(to right, #0401F5, #015CDB, #00C2DB);
+}
+
+.text{
+  flex-shrink: 0;
+}
+
+.disclaimerPremiumTitle{
+  font-weight: 700;
+  font-size: .9.1em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: .62rem;
+  text-shadow: 1px 1px 1px black;
+}
+
+.disclaimerPremiumSubtitle{
+  font-weight: 500;
+  font-size: 1em;
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
+}
+
+.disclaimerPremium button{
+  background-color: #fff;
+  color: #000;
+  padding: .87rem 1.8rem;
+  border: 1px solid transparent;
+  box-shadow: 1px 1px 5px black;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-weight: 600;
+}
 
 
 

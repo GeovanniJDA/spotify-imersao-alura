@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spotify</title>
-  <link rel="stylesheet" href="./assets/style/reset.css">
-  <link rel="stylesheet" href="./assets/style/style.css">
-  <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./src/assets/style/reset.css">
+  <link rel="stylesheet" href="./src/assets/style/vars.css">
+  <link rel="stylesheet" href="./src/assets/style/siderbar-footer.css">
+  <link rel="stylesheet" href="./src/assets/style/main.css">
+  <link rel="shortcut icon" href="./src/assets/icons/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"/>
 </head>
@@ -15,7 +17,7 @@
     <nav class="sidebarNavigation">
       <div class="logo">
         <a href="">
-          <img src="./assets/icons/logo-spotify.png" alt="logo-spotify">
+          <img src="./src/assets/icons/logo-spotify.png" alt="logo-spotify">
         </a>
       </div>
         <ul>
@@ -65,6 +67,41 @@
       </div>
     </div>
   </div>
+
+  <main>
+    <div class="mainContainer">
+      <nav class="headerNavigation">
+        <div class="navigation">
+          <button class="arrowLeft">
+            <img src="./src/assets/icons/small-left.png" alt="Seta esquerda">
+          </button>
+          <button class="arrowRight">
+            <img src="./src/assets/icons/small-right.png" alt="Seta direita">
+          </button>
+        </div>
+        <div class="headerSearch">
+          <img src="./src/assets/icons/search.png" alt="">
+          <input id="searchInput" type="text" maxlength="500" placeholder="O que você quer ouvir?">
+        </div>
+        <div class="headerLogin">
+          <button class="subscribe">Inscreva-se</button>
+          <button class="login">Entrar</button>
+        </div>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="disclaimerPremium">
+    <div class="text">
+      <p class="disclaimerPremiumTitle">Testar Premium de graça</p>
+      <p class="disclaimerPremiumSubtitle">
+        Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.
+      </p>
+    </div>
+    <div>
+      <button type="button">Inscreva-se grátis</button>
+    </div>
+  </footer>
 
   <script src="./assets/js/script.js"></script>
 </body>

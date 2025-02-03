@@ -1,227 +1,218 @@
-body{
-  background-color: #000;
-  font-family: var(--font-dm-sans);
-}
-
-.sidebar{
+.sidebar {
   position: fixed;
-  top: 0;
   left: 0;
-  bottom: 0;
-  padding: .750rem;
-  width: 300px;
+  top: 0;
+  width: 18.5rem;
+  padding: .7rem;
 }
 
-.sidebarNavigation{
-  background-color: #121212;
-  border-radius: 8px;
-  padding: 1rem 0 0 1rem;
-}
-
-.sidebarNavigation .logo{
-  background: #121212;
+.sidebar .logo {
+  background-color: #12121200;
   display: flex;
   border-radius: 8px;
   padding: 1rem 0 0 1rem;
 }
 
-.logo img{
-  width: 80px;
+.sidebar .logo img {
+  width: 5rem;
 }
 
-.sidebar nav ul{
-  margin-top: 1.25rem;
-  padding: 0 1.25rem .625rem 1.25rem;
+.sidebar__navigation {
+  background-color: #121212a4;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.sidebar nav li {
-  padding: .875rem 0;
+.sidebar nav ul {
+  list-style: none;
+  margin-top: 1.2rem;
+  padding: 0 1.2rem .62rem 1.2rem;
 }
 
-.sidebar nav ul li a{
+.sidebar nav ul li {
+  padding: .62rem 0;
+}
+
+.sidebar nav ul li a {
   color: #b3b3b3;
-  font-weight: 600;
-  font-size: .875em;
   text-decoration: none;
-}
-
-.library{
-  background-color: #121212;
-  color: #b3b3b3;
-  padding: .75rem 1rem .5rem 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-radius: .5rem;
-  margin-top: .63rem;
   font-weight: 600;
+  font-size: .87em;
 }
 
-.libraryContent{
+.sidebar nav ul li .fa {
+  font-size: 1.2em;
+  margin-right: .62rem;
+  font-weight: 300;
+}
+
+.sidebar nav ul li a:hover {
+  color: #ffffff;
+}
+
+.library {
+  background-color: #121212a4;
+  border-radius: 8px;
   display: flex;
   justify-content: space-between;
+  min-block-size: 2.5rem;
+  padding: .2rem .5rem;
+  color: #b3b3b3;
+  font-weight: 600;
+  font-size: .87em;
+  margin-top: .62rem;
+  flex-direction: column;
 }
 
-.libraryButton{
-  display: flex;
-  justify-content: flex-start;
-  padding: 1.25rem .5rem;
-  margin-right: .63rem;
-  background-color: transparent;
-  border: none;
+.library .library__button {
+  margin-right: .62rem;
   color: #b3b3b3;
+  background-color: transparent;
+  border: 0;
+  font-size: 1rem;
   font-weight: 700;
-  font-size: .875em;
-  text-align: center;
-  height: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   text-decoration: none;
   text-transform: none;
+  padding: 1.2rem .62rem;
+  display: flex;
 }
 
-.libraryButton .fa{
-  font-size: 1.25em;
-  font-weight: 300;
-  color: #b3b3b3;
+.library .library__button .fa {
+  font-size: 1.2em;
   margin-right: .62rem;
+  font-weight: 300;
   padding-right: .5rem;
 }
 
-.libraryContent .fa-plus{
-  margin: 1.3rem .62rem;
-}
-
-.sectionPlaylist{
+.library__content {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
-  gap: 1.25rem;
-  background-color: #242424;
-  color: #b3b3b3;
-  font-weight: 300;
-  font-size: .875em;
-  margin: .5rem 0;
-  padding: 1rem 1.25rem;
-  border-radius: .875rem;
 }
 
-.sectionPlaylistContent{
+.library .library__content .fa-plus {
+ margin: 1.5rem .62rem;
+}
+
+.section-playlist {
+  background-color: #242424;
+  align-items: flex-start;
+  border-radius: 8px;
+  gap: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  min-block-size: 2.5rem;
+  color: #b3b3b3;
+  font-weight: 600;
+  font-size: .87em;
+  margin: .5rem 0;
+  padding: 1rem 1.2rem;
+}
+
+.section-playlist .section-playlist__content {
   display: flex;
   flex-direction: column;
 }
 
-.sectionPlaylistContent .text{
-  padding-bottom: .87rem;
-  color: #fff;
+.section-playlist__content .text {
+ padding-bottom: .87rem;
+ color: #fff;
 }
 
-.sectionPlaylistContent .title{
-  font-weight: 700; 
+.section-playlist__content .title {
+ font-weight: 700;
 }
 
-.sectionPlaylistContent .subtitle{
+.section-playlist__content .subtitle {
   font-weight: 500;
-  font-size: 1em;
+  font-size: .8em;
 }
 
-.sectionPlaylistContent .sectionPlaylistButton{
-  display: flex;
-  justify-content: center;
-  background-color: #fff;
+.section-playlist__content .section-playlist__button {
+  background-color: #ffffff;
   color: #000;
-  border-radius: 1.25rem;
-  font-size: .875em;
+  border-radius: 9999px;
+  display: flex;
+  font-size: .8em;
   font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   text-transform: none;
-  margin-top: .875rem;
-  padding: .5rem;
-  border: none;
-  width: 113px;
+  padding: .62rem;
+  border: 0;
+  width: 7rem;
+  justify-content: center;
+  margin-top: .7rem;
 }
 
-.sidebar .cookies{
-  margin: 1.5rem 1.25rem;
+.sidebar .cookies {
+  margin: 1.5rem 1.2rem;
 }
 
-.sidebar .cookies a{
+.sidebar .cookies a {
   color: #b3b3b3;
   font-weight: 500;
-  font-size: .7rem;
   text-decoration: none;
+  font-size: .7em;
 }
 
-.sidebar .cookies a:hover{
+.sidebar .cookies a:hover {
   text-decoration: underline;
 }
 
-.languages .languagesButton{
-  align-items: center;
+.languages .languages__button {
   background-color: transparent;
+  border-radius: 9999px;
   border: 1px solid #878787;
   color: #fff;
   cursor: pointer;
-  font-weight: bold;
-  width: 200px;
-  margin: .8rem;
+  align-items: center;
   padding: .8rem;
-  border-radius: 1.25rem;
+  width: 13rem;
+  margin: .5rem;
+  font-weight: bold;
 }
 
-.disclaimerPremium{
-  display: flex;
-  justify-content: space-between;
+.disclaimer-premium {
   position: fixed;
   bottom: 0;
-  right: 0;
   left: 0;
-  padding: .93rem 2.5rem;
-  background-image: linear-gradient(to right, #0401F5, #015CDB, #00C2DB);
+  right: 0;
+  background: linear-gradient(to right,#0c0c0c 48%, #5c040c);
+  padding: .9rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
 }
-
-.text{
-  flex-shrink: 0;
+.disclaimer-premium .text {
+ flex-shrink: 0;
 }
-
-.disclaimerPremiumTitle{
-  font-weight: 700;
-  font-size: .9.1em;
+.disclaimer-premium .disclaimer-premium__title {
+  color: #ffffff;
   text-transform: uppercase;
-  color: #fff;
+  font-weight: 400;
+  font-size: .7em;
   margin-bottom: .62rem;
-  text-shadow: 1px 1px 1px black;
 }
 
-.disclaimerPremiumSubtitle{
+.disclaimer-premium .disclaimer-premium__subtitle {
+  color: #ffffff;
+  font-size: .8em;
   font-weight: 500;
-  font-size: 1em;
-  color: #fff;
-  text-shadow: 1px 1px 2px black;
 }
 
-.disclaimerPremium button{
-  background-color: #fff;
-  color: #000;
-  padding: .87rem 1.8rem;
-  border: 1px solid transparent;
-  box-shadow: 1px 1px 5px black;
+.disclaimer-premium button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: .9rem;
+  font-weight: bold;
+  padding: .8rem 1.8rem;
+  border: 0;
   border-radius: 2.5rem;
   cursor: pointer;
   flex-shrink: 0;
-  font-weight: 600;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#artistList {
+  display: none;
+}
